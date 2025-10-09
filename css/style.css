@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+html,
+body {
+  background-color: black;
+  color: white;
+  margin-right: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+
+video {
+  display: block;
+  margin: 5rem auto;
+}
