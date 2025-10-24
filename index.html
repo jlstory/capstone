@@ -1,28 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Josh Story's Capstone Project for MA at Minneapolis College of Art and Design, Nameless Faceless"
+    />
     <title>Josh Story Capstone</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon/asset-164.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/asset-132.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/asset-116.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/asset-1180.png"
+    />
+    <meta name="msapplication-TileColor" content="#D83434" />
+    <meta name="msapplication-TileImage" content="img/favicon/asset-116.png" />
+    <link rel="manifest" href="/path/to/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <main>
-      <video autoplay="" loop="" muted="" width="500">
+      <!-- Header -->
+      <header class="header" role="banner"></header>
+      <!-- Erase ME!-->
+      <video autoplay="" loop="" muted="">
         <source src="vid/circle_spin.mp4" type="video/mp4" />
         <source src="vid/circle_spin.mov" type="video/mov" />
       </video>
 
       <h1>Coming Soon!</h1>
+
+      <!-- Accordion Start -->
+      <div class="accordion" id="faq" data-allow-multiple="false">
+        <!-- Item 1 -->
+        <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-1"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-1"
+            >
+              <h2>Section One</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-1"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-1"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              Section one content goes in the drop-down area.
+            </div>
+          </div>
+        </section>
+
+        <!-- Item 2 -->
+        <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-2"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-2"
+            >
+              <h2>Section Two</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-2"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-2"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              Section two content goes in the drop-down area.
+            </div>
+          </div>
+        </section>
+
+        <!-- Item 3 -->
+        <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-3"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-3"
+            >
+              <h2>Section Three</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-3"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-3"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              Section three content goes in the drop-down area.
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
