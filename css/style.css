@@ -64,18 +64,24 @@ p {
 }
 
 .container {
-  max-width: 60vw;
+  max-width: 65vw;
   margin: 56px auto;
   padding: 0 20px;
 }
 
-/*  */
+.page-title {
+  margin: 0 0 20px;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+}
 
 .accordion {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) + 2px);
   overflow: hidden;
+  display: block;
+  max-width: 65vw;
 }
 
 /* Item */
