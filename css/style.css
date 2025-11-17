@@ -372,7 +372,7 @@ p {
   justify-content: center;
   background: rgba(0, 0, 0, 0.35);
   cursor: pointer;
-  z-index: 2;
+  z-index: 0;
 }
 
 .nf-carousel__control:hover {
@@ -405,7 +405,7 @@ p {
   translate: -50% 0;
   display: flex;
   gap: 10px;
-  z-index: 2;
+  z-index: 0;
   align-items: center;
   background: rgba(0, 0, 0, 0.35);
   padding: 6px 10px;
