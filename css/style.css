@@ -134,6 +134,10 @@ p {
   padding: 0;
 }
 
+.center {
+  text-align: center;
+}
+
 /* Accordion Styles */
 .accordion {
   overflow: hidden;
