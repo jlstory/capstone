@@ -365,6 +365,8 @@ p {
   transform: translateY(-50%);
   width: 25px;
   height: 25px;
+  max-width: 25px;
+  max-height: 25px;
   border-radius: 50%;
   border: none;
   display: flex;
@@ -380,6 +382,8 @@ p {
   border: 2px solid var(--color-white);
   width: 25px;
   height: 25px;
+  max-width: 25px;
+  max-height: 25px;
 }
 
 .nf-carousel__control--prev {
