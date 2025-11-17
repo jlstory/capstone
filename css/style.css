@@ -397,7 +397,7 @@ p {
   margin-top: 1rem;
 }
 
-/* Pagination: true horizontal center at bottom */
+/* Pagination */
 .nf-carousel__dots {
   position: absolute;
   bottom: 10px;
