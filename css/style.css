@@ -253,10 +253,6 @@ p {
   width: 50vw;
   display: block;
   margin: 0 auto 2rem auto;
-  background-image: url(../img/cornershine_bg.png);
-  background-size: cover;
-  background-position: top right;
-  background-blend-mode: color-burn;
   padding: 0;
   border: 2px solid var(--color-white);
   border-radius: 14px;
