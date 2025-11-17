@@ -405,6 +405,14 @@ p {
   margin-top: 1rem;
 }
 
+.nf-carousel__control img {
+  width: 25px;
+  height: 25px;
+  max-width: 25px !important;
+  max-height: 25px !important;
+  padding: 5px;
+}
+
 /* Pagination */
 .nf-carousel__dots {
   position: absolute;
