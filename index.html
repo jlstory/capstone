@@ -34,22 +34,43 @@
     <link rel="manifest" href="/path/to/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/09dcee39d0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
       <!-- Header -->
-      <header class="header" role="banner"></header>
-      <!-- Erase ME!-->
+      <header id="pageHeader">
+        <div class="header-left">
+          Josh Story |
+          <a class="mail-a" href="mailto:josh@intakt-design.com">
+            josh@intakt-design.com</a
+          >
+        </div>
+        <div class="header-right">
+          Capstone Project - Nameless Faceless | GWD-7800-20-F25
+        </div>
+      </header>
+      <!-- Video Embed-->
       <video autoplay="" loop="" muted="">
         <source src="vid/circle_spin.mp4" type="video/mp4" />
         <source src="vid/circle_spin.mov" type="video/mov" />
       </video>
 
-      <h1>Coming Soon!</h1>
+      <!-- Main Content / Title Section -->
+      <h1>NAMELESS FACELESS</h1>
+      <h1 class="sub-title">Josh Story</h1>
 
       <!-- Accordion Start -->
-      <div class="accordion" id="faq" data-allow-multiple="false">
-        <!-- Item 1 -->
+      <div
+        class="accordion"
+        id="faq"
+        data-allow-multiple="true"
+        data-close-others="false"
+      >
+        <!-- Introduction -->
         <section class="accordion__item">
           <h2 class="accordion__header">
             <button
@@ -58,7 +79,7 @@
               aria-expanded="false"
               aria-controls="acc-panel-1"
             >
-              <h2>Section One</h2>
+              <h2>Introduction</h2>
               <span class="accordion__icon" aria-hidden="true"></span>
             </button>
           </h2>
@@ -70,12 +91,33 @@
             hidden
           >
             <div class="accordion__panel-inner">
-              Section one content goes in the drop-down area.
+              <figure class="img_frame">
+                <img
+                  id="intro_logo"
+                  src="img/stacked_logo--purpose.svg"
+                  alt="Nameless Faceless Logo"
+                />
+              </figure>
+              <p class="accordon_content accordion_content--p">
+                Nameless Faceless is a clothing brand that supports nonprofits
+                by contributing sales directly to their funding efforts.
+              </p>
+              <h3 class="accordon_content accordion_content--h3">
+                Associated Taglines
+              </h3>
+              <p
+                class="accordon_content accordion_content--p--single centered_text"
+              >
+                <q>Purpose in Every Thread</q>
+              </p>
+              <p class="accordon_content accordion_content--p centered_text">
+                <q>Wear the Cause. Be the Change.</q>
+              </p>
             </div>
           </div>
         </section>
 
-        <!-- Item 2 -->
+        <!-- Problem Statement -->
         <section class="accordion__item">
           <h2 class="accordion__header">
             <button
@@ -84,7 +126,7 @@
               aria-expanded="false"
               aria-controls="acc-panel-2"
             >
-              <h2>Section Two</h2>
+              <h2>Problem Statement</h2>
               <span class="accordion__icon" aria-hidden="true"></span>
             </button>
           </h2>
@@ -96,12 +138,86 @@
             hidden
           >
             <div class="accordion__panel-inner">
-              Section two content goes in the drop-down area.
+              <figure class="img_frame">
+                <img
+                  id="homeless"
+                  class="img_single"
+                  src="img/homeless.png"
+                  alt="Supporting Image of Homeless Person"
+                />
+              </figure>
+              <p class="accordon_content accordion_content--p">
+                Nonprofit organizations are fighting on the front-lines of
+                today&#39;s most pressing social, environmental, and
+                humanitarian challenges. Yet too many remain unseen—struggling
+                to gain visibility, connect with younger generations, and secure
+                the funding and resources they need to survive. A generation
+                ready to rise up is left searching for ways to make their voices
+                count, but often don&#39;t know where to begin. As governmental
+                sources of aid continue to dwindle and vanish, this growing gap
+                threatens to silence the impact of these organizations—at a time
+                when nonprofit support is perhaps more crucial than at any prior
+                point in our nation&#39;s history.
+              </p>
+              <h3 class="accordon_content accordion_content--h3">
+                What does this mean for nonprofits and communities?
+              </h3>
+              <p class="accordon_content accordion_content--p">
+                &#8220;In the first months of 2025, America&#39;s safety net
+                began to fray. From food banks to community health programs,
+                thousands of nonprofits found their government funding delayed,
+                frozen or stripped away.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                The Urban Institute&#39;s October report
+                <a
+                  class="accordion_link"
+                  href="https://www.urban.org/sites/default/files/2025-10/How_Government_Funding_Disruptions_Affected_Nonprofits_in_Early_2025.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  “How Government Funding Disruptions Affected Nonprofits in
+                  Early 2025”</a
+                >
+                reveals how the country&#39;s moral infrastructure is buckling
+                under the weight of political choices and bureaucratic neglect.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                The report found that one in three nonprofits experienced some
+                form of government funding disruption between January and June:
+                21% lost at least some government funding; 27% saw funds delayed
+                or frozen; and 6% received stop-work orders that halted programs
+                entirely. These numbers, the researchers wrote, reveal a
+                “cascading effect” across the nation&#39;s nonprofit landscape.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                Federal agencies began canceling grants and pulling back
+                committed funds at the start of the year.&#8221; <sup>1</sup>
+              </p>
+              <h3 class="accordon_content accordion_content--h3">
+                Why nonprofit organizations are bincreasingly important.
+              </h3>
+              <p class="accordon_content accordion_content--p">
+                &#8220;Republican proposals that Congress might consider this
+                year could take away income assistance and services from
+                families with the lowest incomes, children with disabilities,
+                and other vulnerable people, making their lives even harder. A
+                range of proposals, including a menu of spending cuts that House
+                Republicans are reportedly considering, would weaken or even
+                eliminate programs that serve these individuals and
+                families.&#8221; <sup>2</sup>
+              </p>
+              <p class="accordon_content accordion_content--p">
+                Nonprofit organizations that provide services to these
+                populations would likely see increased demand for their
+                services, at a time when government support for their work could
+                be reduced or eliminated entirely.
+              </p>
             </div>
           </div>
         </section>
 
-        <!-- Item 3 -->
+        <!-- Proposed Solution -->
         <section class="accordion__item">
           <h2 class="accordion__header">
             <button
@@ -110,7 +226,7 @@
               aria-expanded="false"
               aria-controls="acc-panel-3"
             >
-              <h2>Section Three</h2>
+              <h2>Proposed Solution</h2>
               <span class="accordion__icon" aria-hidden="true"></span>
             </button>
           </h2>
@@ -122,12 +238,555 @@
             hidden
           >
             <div class="accordion__panel-inner">
-              Section three content goes in the drop-down area.
+              <figure class="img_frame img_solution">
+                <img
+                  id="solution"
+                  class="img_single"
+                  src="img/solution.png"
+                  alt="Nameless Faceleess Branded Hoodie with Added Visual Elements"
+                />
+              </figure>
+              <p class="accordon_content accordion_content--p">
+                Nameless Faceless exists to bridge creativity and impact —
+                funding and amplifying organizations already hard at work to
+                build a better future. Clothing is a tangible vehicle that can
+                be utilized to both build funding and community.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                Through purposeful design and authentic community connection, we
+                meet our audience where they gather: online, at pop-ups,
+                rallies, protests, concerts, and cultural events. We don&#39;t
+                just sell clothing; we strive to create a culture based on
+                peace, unity, and understanding. A strong clothing brand can
+                easily be used as a tool to engage new audiences, create
+                awareness, and help some find a starting place to help out while
+                simultaneously and continually helping fund the efforts of
+                nonprofits and promoting a change in political climate that
+                could realistically eliminate the need for many of the
+                organizations that bear the burden for those left behind by
+                their governing bodies.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                Every part of every piece of clothing serves a purpose. Armbands
+                signal unity in purpose and promote a sense of belonging. QR
+                codes connect wearers directly to the causes that they choose to
+                stand for. Fashion becomes activism, community becomes movement,
+                and movement becomes a solution.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                I believe in integrity over opportunism. The goal is never to
+                profit from pain — but to stand beside those doing the real work
+                involved in facilitating change.
+              </p>
             </div>
           </div>
         </section>
+
+        <!-- Process and Progress -->
+        <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-4"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-4"
+            >
+              <h2>Process and Progress</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-4"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-4"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              <h3 class="accordon_content accordion_content--h3">
+                Process | Initial Ideation
+              </h3>
+              <figure class="img_frame">
+                <img
+                  id="circle_logo"
+                  src="img/circle_logo.svg"
+                  alt="Nameless Faceless Circle Logo"
+                />
+              </figure>
+              <p class="accordon_content accordion_content--p">
+                The early stages of my process for this project are difficult to
+                represent in presentation format. The idea for this brand is not
+                necessarily something that I can claim, but I didn&#39;t steal
+                it... I woke up from deep sleep, and it was there.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                What I had at that point was a clothing brand called “Nameless
+                Faceless” that is represented by a simple circle. The symbolism
+                represented by a circle is well known and can be interpreted in
+                many ways. Some may say unity, infinity, wholeness, a cyclical
+                nature, inclusion, celestial bodies, and so on. For this brand
+                the circle does represent all of these things, but in a more
+                direct way, the circle is simply a stick figure&#39;s head that
+                lacks identity — it represents the figuratively nameless and
+                faceless masses.
+              </p>
+              <h3 class="accordon_content accordion_content--h3">
+                A Quick Look at the Circle
+              </h3>
+              <figure class="img_frame">
+                <img
+                  id="circle_logo--explained"
+                  src="img/stick_figure.svg"
+                  alt="Nameless Faceless Circle Logo Explaination Diagram"
+                />
+              </figure>
+              <p class="accordon_content accordion_content--p">
+                At this point, I was also well aware of the mission — to find a
+                way to provide the nameless and faceless with a metaphorical
+                name, a face, and a voice. I wanted to use this symbol to help
+                those who need it, and having done a fair amount of nonprofit
+                work — the starting point felt obvious. So, that&#39;s where
+                this story begins...
+              </p>
+              <h3 class="accordon_content accordion_content--h3">
+                Process | Wordmark Conceptualization
+              </h3>
+              <p class="accordon_content accordion_content--p">
+                I sat on this idea for a long time, but it never left my
+                thoughts. I kept being drawn back to it, but lacked the time to
+                actually build anything out. Finally, I was met with the
+                &#8220;Dynamic Identities&#8221; project from the Experimental
+                Interaction course. I decided to bring this idea in at this
+                point because I was curious as to how I may be able to implement
+                the circle dynamically and how this may impact the brand as a
+                whole.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                My goal with the project was to use the circle as a dynamic
+                element that would represent individual nonprofit organizations.
+                To do so, I would need to create a word-mark and other branding
+                assets while maintaining my initial concept. While an
+                interesting exploration, I ultimately decided that I prefer the
+                plain circle, as is, for most use cases. I consider the circle
+                to be the primary brand mark to the extent that my ultimate
+                branding goal is that the presence of a wordmark would
+                eventually become unnecessary. That said, a wordmark will be
+                essential to brand recognition in early stages.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                At this point content begins to swing back and fourth between
+                explorations in dynamic identity for Experimental Interaction,
+                and the refinements / additions that I worked with during my
+                Design Studio course the following semester. Though I already
+                had a basic idea for what I wanted the wordmark to look like, I
+                try to avoid becoming attached to an idea. I like to leave some
+                room for play and experimentation. I ultimately came back
+                something very similar to my original idea, but it is always
+                worth taking the time to look at other options. Below you can
+                see the process work for the final wordmark for Nameless
+                Faceless.
+              </p>
+
+              <!-- CAROUSEL COMPONENT -->
+              <section class="nf-carousel" data-carousel>
+                <div
+                  class="nf-carousel__viewport"
+                  tabindex="0"
+                  aria-live="polite"
+                >
+                  <div class="nf-carousel__track">
+                    <figure class="nf-carousel__slide">
+                      <img
+                        src="img/initial_wordmark_sketches.png"
+                        alt="Initial Wordmark Sketches"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <figure class="nf-carousel__slide">
+                      <img
+                        src="img/lastround_wordmark_iterations.svg"
+                        alt="Last Round Wordmark Iterations"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <figure class="nf-carousel__slide">
+                      <img
+                        src="img/logo_stacked--lockup.svg"
+                        alt="Final Stacked Logo Lockup"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <figure class="nf-carousel__slide">
+                      <img
+                        src="img/logo-horizontal--lockup.svg"
+                        alt="Final Horizontal Logo Lockup"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </div>
+                </div>
+                <div class="nf-carousel_toolbar">
+                  <button
+                    class="nf-carousel__control nf-carousel__control--prev"
+                    aria-label="Previous slide"
+                  >
+                    <img
+                      src="img/icons/angle-left-solid-full.svg"
+                      alt="previous slide"
+                    />
+                  </button>
+                  <button
+                    class="nf-carousel__control nf-carousel__control--next"
+                    aria-label="Next slide"
+                  >
+                    <img
+                      src="img/icons/angle-right-solid-full.svg"
+                      alt="next slide"
+                    />
+                  </button>
+                  <div
+                    class="nf-carousel__dots"
+                    role="tablist"
+                    aria-label="Slide pagination"
+                  ></div>
+                </div>
+              </section>
+              <h3 class="accordon_content accordion_content--h3">
+                Process | Let's a Quick Step Back to the Circle
+              </h3>
+              <p class="accordon_content accordion_content--p">
+                While much of my work with the use of the circle in the context
+                of a dynmic identity system was ultimately not used in the final
+                branding, some remnants remain. While the plain white circle is
+                used to represent the Nameless Facelss brand, I have
+                incorporated versions used in the dynamic identity exlporations
+                in a few place. First, the armband, which will be discussed
+                later, but is a key branding element, will dispplay a custom qr
+                code leading to the website of the nonprofit organization that
+                is being represented on that specific piece. This is the pramary
+                use case for any dynamic elements. Howwever, I did create a page
+                loader for the website that utilizes several iterations of the
+                circle as it would be used within the context of a dynamic
+                identity system. Below is a quick look at these methods of
+                implementation.
+              </p>
+              <h3 class="accordon_content accordion_content--h3">
+                Logo to Armband to Product Design & Wesite Loader
+              </h3>
+              <section class="nf-carousel" data-carousel>
+                <div
+                  class="nf-carousel__viewport"
+                  tabindex="0"
+                  aria-live="polite"
+                >
+                  <div class="nf-carousel__track">
+                    <figure class="nf-carousel__slide">
+                      <img
+                        src="img/dynamic_id--circle_study_1.svg"
+                        alt="Dynamic Identity Circle Exploration"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <figure class="nf-carousel__slide">
+                      <img
+                        src="img/insp_from_source.svg"
+                        alt="Dynamic Identity as Inspiration"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <figure class="nf-carousel__slide">
+                      <img
+                        src="img/inspo_outcome.svg"
+                        alt="Outcomes of Dynamic Identity Exploration"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <video
+                      class="vid_page-loader nf-carousel__slide"
+                      muted=""
+                      controls
+                    >
+                      <source src="vid/page_loader.mp4" type="video/mp4" />
+                      <source src="vid/page_loader.mov" type="video/mov" />
+                    </video>
+                  </div>
+                </div>
+                <div class="nf-carousel_toolbar">
+                  <button
+                    class="nf-carousel__control nf-carousel__control--prev"
+                    aria-label="Previous slide"
+                  >
+                    <img
+                      src="img/icons/angle-left-solid-full.svg"
+                      alt="previous slide"
+                    />
+                  </button>
+                  <button
+                    class="nf-carousel__control nf-carousel__control--next"
+                    aria-label="Next slide"
+                  >
+                    <img
+                      src="img/icons/angle-right-solid-full.svg"
+                      alt="next slide"
+                    />
+                  </button>
+
+                  <div
+                    class="nf-carousel__dots"
+                    role="tablist"
+                    aria-label="Slide pagination"
+                  ></div>
+                </div>
+              </section>
+              <h3 class="accordon_content accordion_content--h3">
+                Process | Why the Armbands?
+              </h3>
+              <p class="accordon_content accordion_content--p">
+                I include a brief explaination for the use of armbands here
+                because this is an element that I had to go up to bat for. The
+                idea initially tends to not be well received in early
+                presentations. However, this is something that I feel strongly
+                about, enough so that I have collected enough research to make
+                it a difficult battle for any opposition.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                Armbands, or brassards, have been utilized throughout history
+                for many reasons. Some cultures viewed black clothing as being a
+                bit taboo. Those mourning the loss of a loved one often wore
+                black armbands, or white in Ancient China, as a symbol of greif
+                and rememberance. Armbands, even now, hold a place in military
+                use. These easily identifies friend from foe, but in doing so
+                creates a sense of unification. Protest, which is a slightly out
+                of sight, but strong element of this brand has often been
+                represented by wearing armbands that represent the issue being
+                addressed. I state this here rather than under research because
+                it is such a key element to the brand. Other symbolism like
+                protection, personal belief, status, and even pop-culture
+                iconography have all been represented by displaying an armband -
+                typically on the left arm.
+              </p>
+              <p class="accordon_content accordion_content--p">
+                For those of us that may not have been born into an ideal family
+                life, a sense of belonging and unity was a beautiful thing.
+                Often we turned to underground music or art scenes searching for
+                a place to call home. These groups often adopted the name,
+                &#8220;Chosen Family&#8221;. A feeling of belonging can mean
+                everything. We watched out for each other. This was not always
+                represented with an armband or even clothing, but the armband
+                does provide the context for belonging and unity. It is key to
+                remember that the brand is built around the significance of a
+                circle, and an armband is, in fact, a circle around the arm of
+                the wearer. Unification, community, and protest are driving
+                forces behind Nameless Faceless, so the armband stays. Below is
+                collage representing a few of the various ways that armbands
+                have been embraced throughout history.
+              </p>
+              <h3 class="accordon_content accordion_content--h3">
+                Armband Usage
+              </h3>
+              <figure class="img_frame">
+                <img
+                  id="armbands_collage"
+                  src="img/armbands_collage.png"
+                  alt="Armband Usage Collage"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- Research and User Interaction -->
+        <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-5"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-5"
+            >
+              <h2>Research and User Interaction</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-5"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-5"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              <p class="accordon_content">
+                Section four content goes in the drop-down area.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final Deliverables -->
+        <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-6"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-6"
+            >
+              <h2>Final Deliverables</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-6"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-6"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              <p class="accordon_content">
+                Section six content goes in the drop-down area.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-7"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-7"
+            >
+              <h2>Summary</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-7"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-7"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              <p class="accordon_content">
+                Section seven content goes in the drop-down area.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- End Notes and Bibliography -->
+        <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-8"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-8"
+            >
+              <h2>End Notes and Bibliography</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-8"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-8"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              <p class="accordon_content">
+                Section eight content goes in the drop-down area.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Item 9 -->
+        <!-- <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-9"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-9"
+            >
+              <h2>Section Nine</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-9"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-9"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              Section nine content goes in the drop-down area.
+            </div>
+          </div>
+        </section> -->
+
+        <!-- Item 10 -->
+        <!-- <section class="accordion__item">
+          <h2 class="accordion__header">
+            <button
+              id="acc-btn-10"
+              class="accordion__trigger"
+              aria-expanded="false"
+              aria-controls="acc-panel-10"
+            >
+              <h2>Section Ten</h2>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div
+            id="acc-panel-10"
+            class="accordion__panel"
+            role="region"
+            aria-labelledby="acc-btn-10"
+            hidden
+          >
+            <div class="accordion__panel-inner">
+              Section ten content goes in the drop-down area.
+            </div>
+          </div>
+        </section> -->
       </div>
     </main>
+    <div class="footer_bg">
+      <div id="footerToggle">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+    </div>
+    <footer id="pageFooter">
+      <div class="footer_menu">
+        <a href="#acc-btn-1" class="scroll-link">Introduction </a>
+        <a href="#acc-btn-2" class="scroll-link">Problem Statement </a>
+        <a href="#acc-btn-3" class="scroll-link">Proposed Solution </a>
+        <a href="#acc-btn-4" class="scroll-link">Process and Progress </a>
+      </div>
+      <div class="footer_menu--2">
+        <a href="#acc-btn-5" class="scroll-link"
+          >Research and User Interaction</a
+        >
+        <a href="#acc-btn-6" class="scroll-link">Final Deliverables </a>
+        <a href="#acc-btn-7" class="scroll-link">Summary </a>
+        <a href="#acc-btn-8" class="scroll-link">End Notes and Bibliography</a>
+      </div>
+      <p class="copyright">&copy; 2025 Josh Story. All rights reserved.</p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/index.js"></script>
   </body>
 </html>

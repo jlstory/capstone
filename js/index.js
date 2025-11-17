@@ -9,7 +9,26 @@
 
   const accordions = document.querySelectorAll(".accordion");
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let lastScroll = 0;
+  const header = document.getElementById('pageHeader');
+  
 
+//Header
+window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll && currentScroll > 65) {
+        // scrolling down -> hide
+        header.classList.add('hidden');
+      } else {
+        // scrolling up -> show
+        header.classList.remove('hidden');
+      }
+
+      lastScroll = currentScroll;
+    });
+
+  // Accordion
   accordions.forEach((acc) => {
     const allowMultiple = acc.getAttribute("data-allow-multiple") === "true";
     const triggers = acc.querySelectorAll(".accordion__trigger");
@@ -91,3 +110,113 @@
     panel.addEventListener("transitionend", onEnd);
   }
 })();
+
+// Smart Links with Offset and Smooth Scroll
+document.querySelectorAll('.scroll-link').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    const offset = 100; // distance above section
+    const y = target.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+});
+
+// Carousel Behavior
+(() => {
+  function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
+
+  function initNfCarousel(root) {
+    const carousel = root;
+    const track = carousel.querySelector('.nf-carousel__track');
+    const slides = Array.from(track.children);
+    const prevBtn = carousel.querySelector('.nf-carousel__control--prev');
+    const nextBtn = carousel.querySelector('.nf-carousel__control--next');
+    const dotsWrap = carousel.querySelector('.nf-carousel__dots');
+    const viewport = carousel.querySelector('.nf-carousel__viewport');
+
+    let index = 0;
+
+    // Build dots
+    slides.forEach((_, i) => {
+      const b = document.createElement('button');
+      b.className = 'nf-carousel__dot';
+      b.type = 'button';
+      b.setAttribute('role', 'tab');
+      b.setAttribute('aria-label', `Go to slide ${i+1}`);
+      dotsWrap.appendChild(b);
+    });
+    const dots = Array.from(dotsWrap.children);
+
+    function updateUI() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((d, i) => d.setAttribute('aria-current', i === index ? 'true' : 'false'));
+    }
+    function goTo(i) { index = clamp(i, 0, slides.length - 1); updateUI(); }
+
+    prevBtn.addEventListener('click', () => goTo(index - 1));
+    nextBtn.addEventListener('click', () => goTo(index + 1));
+    dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+
+    updateUI(); 
+
+    // Keyboard support
+    viewport.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') goTo(index - 1);
+      if (e.key === 'ArrowRight') goTo(index + 1);
+    });
+
+
+
+    // Optional: swipe support
+    function addSwipe(el, onSwipeLeft, onSwipeRight) {
+      let startX = 0, isDown = false;
+      const threshold = 30;
+      el.addEventListener('pointerdown', (e) => { isDown = true; startX = e.clientX; });
+      el.addEventListener('pointerup', (e) => {
+        if (!isDown) return;
+        const dx = e.clientX - startX;
+        if (dx > threshold) onSwipeRight();
+        if (dx < -threshold) onSwipeLeft();
+        isDown = false;
+      });
+      el.addEventListener('pointerleave', () => { isDown = false; });
+    }
+    addSwipe(viewport, () => goTo(index + 1), () => goTo(index - 1));
+
+    // Init
+    updateUI();
+
+    // Public API (optional)
+    return { next: () => goTo(index + 1), prev: () => goTo(index - 1), goTo };
+  }
+
+  // Auto-init any [data-carousel] on the page
+  document.querySelectorAll('[data-carousel]').forEach(initNfCarousel);
+})();
+
+// Footer Behavior
+let lastScroll = 0;
+const footer = document.getElementById('pageFooter');
+const footerToggle = document.getElementById('footerToggle');
+const chevron = footerToggle.querySelector('i');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  
+  if (currentScroll < lastScroll && currentScroll > 100) {
+    footer.classList.remove('hidden');
+    chevron.classList.add('rotated'); 
+  } else {
+    footer.classList.add('hidden');
+    chevron.classList.remove('rotated'); 
+  }
+
+  lastScroll = currentScroll;
+});
+
+footerToggle.addEventListener('click', () => {
+  footer.classList.toggle('hidden');
+  footerToggle.querySelector('i').classList.toggle('rotated');
+});
