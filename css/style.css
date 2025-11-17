@@ -367,8 +367,8 @@ p {
   transform: translateY(-50%);
   width: 25px;
   height: 25px;
-  max-width: 25px;
-  max-height: 25px;
+  max-width: 25px !important;
+  max-height: 25px !important;
   border-radius: 50%;
   border: none;
   display: flex;
@@ -386,6 +386,8 @@ p {
   height: 25px;
   max-width: 25px;
   max-height: 25px;
+  max-width: 25px !important;
+  max-height: 25px !important;
 }
 
 .nf-carousel__control--prev {
