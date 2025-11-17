@@ -447,7 +447,11 @@ p {
   nf-carousel__control--prev
   nf-carousel__control--next
   img {
-  font-size: 1.5rem;
+  width: 25px;
+  height: 25px;
+  max-width: 25px !important;
+  max-height: 25px !important;
+  padding: 5px;
   color: #fff;
 }
 
