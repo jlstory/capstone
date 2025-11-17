@@ -359,6 +359,8 @@ p {
 
 /* Carousel Controls */
 .nf-carousel__control {
+  -webkit-appearance: none;
+  appearance: none;
   display: block;
   position: absolute;
   bottom: -5px;
