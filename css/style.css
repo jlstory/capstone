@@ -239,7 +239,7 @@ p {
 .img_single--transparent {
   width: 50vw;
   display: block;
-  margin: -2rem auto 2rem auto;
+  margin: 0rem auto 2rem auto;
   overflow: hidden;
   text-align: center;
 }
