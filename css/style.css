@@ -350,7 +350,7 @@ p {
 
 .vid_center {
   display: block;
-  width: 24vw;
+  width: 20vw;
   margin: 2.5rem auto 3rem auto;
   border-radius: 14px;
   border: 2px solid var(--color-white);
