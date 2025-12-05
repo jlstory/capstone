@@ -236,6 +236,14 @@ p {
   text-align: center;
 }
 
+.img_single--transparent {
+  width: 50vw;
+  display: block;
+  margin: -2rem auto 2rem auto;
+  overflow: hidden;
+  text-align: center;
+}
+
 .img_solution {
   width: 50vw;
   display: block;
