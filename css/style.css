@@ -247,6 +247,12 @@ p {
   padding: 0;
 }
 
+.miro_board {
+  aspect-ratio: 16/9;
+  border-radius: 14px;
+  border: 2px solid var(--color-white);
+}
+
 #circle_logo {
   width: 20vw;
   display: block;
@@ -254,6 +260,15 @@ p {
 }
 
 #armbands_collage {
+  width: 50vw;
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0;
+  border: 2px solid var(--color-white);
+  border-radius: 14px;
+}
+
+#twoone_pilots {
   width: 50vw;
   display: block;
   margin: 0 auto 2rem auto;
@@ -284,7 +299,7 @@ p {
 }
 
 .accordion_link {
-  color: var(--color-mgc);
+  color: var(--color-mgd);
   text-decoration: dotted underline;
   text-decoration-color: var(--color-mgc);
   line-height: var(--h2-size);
@@ -304,8 +319,38 @@ p {
   text-align: center;
 }
 
+.accordion_list {
+  list-style: none;
+  display: block;
+  width: 35vw;
+  margin: -1rem auto -3rem auto;
+  padding: 0;
+}
+
+.user_testers--container {
+  width: 50vw;
+  display: block;
+  margin: 1rem auto;
+}
+
+.user_testers--list {
+  padding: 0 2.5rem;
+}
+
+.user_testers--list_item {
+  margin-bottom: 1rem;
+}
+
 .centered_text {
   text-align: center;
+}
+
+.vid_center {
+  display: block;
+  width: 24vw;
+  margin: 2.5rem auto 3rem auto;
+  border-radius: 14px;
+  border: 2px solid var(--color-white);
 }
 
 /* ===== Carousel Content ===== */
