@@ -249,10 +249,10 @@ p {
 
 .miro_board {
   aspect-ratio: 16/9;
-  border-radius: 14px;
+  border-radius: 16px;
   border: 2px solid var(--color-white);
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   display: block;
 }
 
